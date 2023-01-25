@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Morpion
+        </title>
+        <link rel="stylesheet" href="styles/tournois.css">
+		<link rel="stylesheet" href="styles/globals.css">
+        <script type="text/javascript" src="scripts/tournois.js"></script>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div id="mainDiv">
+            <div id="leftDivs">
+                <div id="lbDiv" class="mainDiv">
+                    En attente de la création du match...
+                </div>
+                <div id="nextMatchsDiv" class="mainDiv">
+                    En attente de la création du match...
+                </div>
+            </div>
+            <div id="rightDivs">
+                <div id="gameDiv" class="mainDiv">
+                    <div id="one">
+                        <h1 class="special">
+                            Mode tournois
+                        </h1>
+                        <table id="playersTable">
+                            <tr>
+                                <td>Joueurs</td>
+                                <td>Action</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="Jean Michel" id="addPlayer" />
+                                </td>
+                                <td>
+                                    <button id="addPlayerBtn" onclick="addPlayer()">Ajouter</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <button id="startGameBtn" onclick="startGame()">Démarrer la partie</button>
+                    </div>
+                    <div id="title">
+                
+                    </div>
+                    <div id="line1" class="line">
+                
+                    </div>
+                    <div id="line2" class="line">
+                        
+                    </div>
+                    <div id="line3" class="line">
+                        
+                    </div>
+                    <div id="restart">
+                        <button id="restartBtn" onclick="restartGame()">
+                            Rejouer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
