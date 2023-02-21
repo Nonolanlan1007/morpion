@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="styles/globals.css">
+        <title>
+            Morpion
+        </title>
+        <script type="text/javascript" src="scripts/duo.js"></script>
+
+        <script type="text/javascript">
+            async function replaceValues () {
+                const searchParams = new URLSearchParams(window.location.search);
+
+                let player1name = searchParams.get("player1")
+                let player2name = searchParams.get("player2")
+
+                document.getElementById("player1").value = player1name ? player1name : "Maurice";
+                document.getElementById("player2").value = player2name ? player2name : "Jean-Marc";
+            }
+        </script>
+    </head>
+    <body onload="replaceValues()">
+    
+        <div class="rulesDiv mainDiv">
+            <h1>
+                Comment jouer au morpion ?
+            </h1>
+            <p>
+                Le but du jeu est d’aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale.
+                Chaque joueur a donc son propre symbole, généralement une croix pour l’un et un rond pour l’autre. La partie se termine quand l’un des joueurs à aligner 3 symboles ou quand la grille est complétée sans vainqueur. Il y a alors égalité.
+            </p>
+            <h1>
+                Comment gagner une partie de Morpion ?
+            </h1>
+            <p>
+                Le premier joueur a aligner 3 symboles identiques gagne la partie. 
+                Attention, le joueur qui débute est toujours avantagé pour gagner. Pensez donc à alterner !                    
+            </p>
+        </div>
+        <div id="gameDiv" class="gameDiv mainDiv">
+            <div class="formDiv" id="formDiv">
+                <h3>
+                    Noms des joueurs :
+                </h3>
+                <div>
+                    <label for="player1">Joueur 1 :</label>
+                    <input type="text" id="player1" value="Maurice">
+                </div>
+                <div>
+                    <label for="player2">Joueur 2 :</label>
+                    <input type="text" id="player2" value="Jean-Marc">
+                </div>
+                <div>
+                    <button id="buttonNamesOk" class="btn" onclick="setPlayersNames();">
+                        Démarrer
+                    </button>
+                </div>
+            </div>
+            <div id="title">
+                
+            </div>
+            <div id="line1" class="line">
+        
+            </div>
+            <div id="line2" class="line">
+                
+            </div>
+            <div id="line3" class="line">
+                
+            </div>
+            <div id="restart">
+                <button id="restartBtn" class="btn" onclick="restartGame()">
+                    Rejouer
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

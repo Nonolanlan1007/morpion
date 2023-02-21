@@ -54,25 +54,25 @@ function setPlayersNames () {
 
 function drawGameBoard () {
     document.getElementById("line1").innerHTML = `
-        <button id="A1" onclick="caseSelector('A1')" ${player1Cases.includes("A1") || player2Cases.includes("A1") ? "disabled" : ""}><img src="${getPlayerOnCase("A1") === 1 ? player1Item : getPlayerOnCase("A1") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="A1" onclick="caseSelector('A1')" ${player1Cases.includes("A1") || player2Cases.includes("A1") ? "disabled" : ""}><img src="${getPlayerOnCase("A1") === 1 ? player1Item : getPlayerOnCase("A1") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="A2" onclick="caseSelector('A2')" ${player1Cases.includes("A2") || player2Cases.includes("A2") ? "disabled" : ""}><img src="${getPlayerOnCase("A2") === 1 ? player1Item : getPlayerOnCase("A2") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="A2" onclick="caseSelector('A2')" ${player1Cases.includes("A2") || player2Cases.includes("A2") ? "disabled" : ""}><img src="${getPlayerOnCase("A2") === 1 ? player1Item : getPlayerOnCase("A2") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="A3" onclick="caseSelector('A3')" ${player1Cases.includes("A3") || player2Cases.includes("A3") ? "disabled" : ""}><img src="${getPlayerOnCase("A3") === 1 ? player1Item : getPlayerOnCase("A3") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="A3" onclick="caseSelector('A3')" ${player1Cases.includes("A3") || player2Cases.includes("A3") ? "disabled" : ""}><img src="${getPlayerOnCase("A3") === 1 ? player1Item : getPlayerOnCase("A3") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
     `
     document.getElementById("line2").innerHTML = `
-        <button id="B1" onclick="caseSelector('B1')" ${player1Cases.includes("B1") || player2Cases.includes("B1") ? "disabled" : ""}><img src="${getPlayerOnCase("B1") === 1 ? player1Item : getPlayerOnCase("B1") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="B1" onclick="caseSelector('B1')" ${player1Cases.includes("B1") || player2Cases.includes("B1") ? "disabled" : ""}><img src="${getPlayerOnCase("B1") === 1 ? player1Item : getPlayerOnCase("B1") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="B2" onclick="caseSelector('B2')" ${player1Cases.includes("B2") || player2Cases.includes("B2") ? "disabled" : ""}><img src="${getPlayerOnCase("B2") === 1 ? player1Item : getPlayerOnCase("B2") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="B2" onclick="caseSelector('B2')" ${player1Cases.includes("B2") || player2Cases.includes("B2") ? "disabled" : ""}><img src="${getPlayerOnCase("B2") === 1 ? player1Item : getPlayerOnCase("B2") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="B3" onclick="caseSelector('B3')" ${player1Cases.includes("B3") || player2Cases.includes("B3") ? "disabled" : ""}><img src="${getPlayerOnCase("B3") === 1 ? player1Item : getPlayerOnCase("B3") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="B3" onclick="caseSelector('B3')" ${player1Cases.includes("B3") || player2Cases.includes("B3") ? "disabled" : ""}><img src="${getPlayerOnCase("B3") === 1 ? player1Item : getPlayerOnCase("B3") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
     `
     document.getElementById("line3").innerHTML = `
-        <button id="C1" onclick="caseSelector('C1')" ${player1Cases.includes("C1") || player2Cases.includes("C1") ? "disabled" : ""}><img src="${getPlayerOnCase("C1") === 1 ? player1Item : getPlayerOnCase("C1") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="C1" onclick="caseSelector('C1')" ${player1Cases.includes("C1") || player2Cases.includes("C1") ? "disabled" : ""}><img src="${getPlayerOnCase("C1") === 1 ? player1Item : getPlayerOnCase("C1") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="C2" onclick="caseSelector('C2')" ${player1Cases.includes("C2") || player2Cases.includes("C2") ? "disabled" : ""}><img src="${getPlayerOnCase("C2") === 1 ? player1Item : getPlayerOnCase("C2") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="C2" onclick="caseSelector('C2')" ${player1Cases.includes("C2") || player2Cases.includes("C2") ? "disabled" : ""}><img src="${getPlayerOnCase("C2") === 1 ? player1Item : getPlayerOnCase("C2") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
         <hr width="0.5px" size="50px" />
-        <button id="C3"  onclick="caseSelector('C3')" ${player1Cases.includes("C3") || player2Cases.includes("C3") ? "disabled" : ""}><img src="${getPlayerOnCase("C3") === 1 ? player1Item : getPlayerOnCase("C3") === 2 ? player2Item : none}" width="50" height="50"></button>
+        <button id="C3"  onclick="caseSelector('C3')" ${player1Cases.includes("C3") || player2Cases.includes("C3") ? "disabled" : ""}><img src="${getPlayerOnCase("C3") === 1 ? player1Item : getPlayerOnCase("C3") === 2 ? player2Item : none}" width="50" height="50" class="none"></button>
     `
 }
 
