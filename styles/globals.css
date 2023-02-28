@@ -39,6 +39,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-::selection {
-	background: none;
+button::selection {
+    background: none;
 }
